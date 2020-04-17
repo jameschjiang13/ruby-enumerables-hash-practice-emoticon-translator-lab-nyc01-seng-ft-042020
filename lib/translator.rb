@@ -11,6 +11,15 @@ def load_library(path)
      :japanese => emoji_hash.values[0][1]
    }
  }
+ counter = 0
+ while counter < emoji_hash.length do
+   a_new_hash_element = {emoji_hash.keys[counter] => {
+     :english => emoji_hash.values[counter][0],
+     :japanese => emoji_hash.values[counter][1]
+   }
+   display_hash.merge!(a_new_hash_element)
+   counter += 1
+ end
  binding.pry
  end
 
