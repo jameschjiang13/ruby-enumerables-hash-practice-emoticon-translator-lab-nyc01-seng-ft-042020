@@ -31,7 +31,7 @@ def get_japanese_emoticon
 end
 
 def get_english_meaning(path,emoji)
-  load_library(path)
+  display_hash = load_library(path)
   counter = 0
   while counter < display_hash.length do
     if display_hash[display_hash.keys[counter]][:japanese] == emoji
