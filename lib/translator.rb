@@ -26,8 +26,17 @@ def load_library(path)
  return display_hash
  end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, emoticon)
   # code goes here
+  display_hash = load_library(path)
+  counter = 0
+  while counter < display_hash.length do
+    if display_hash[display_hash.keys[counter]][:english] == emoticon
+      return display_hash[display_hash.keys[counter]][:japanese]
+    end
+    counter += 1
+  end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path,emoji)
