@@ -3,8 +3,9 @@ require 'yaml'
 require 'pry'
 def load_library(path)
   # code goes here
- emoji = YAML.load_file('lib/emoticons.yml')
- emoji
+ emoji_hash = YAML.load_file('lib/emoticons.yml')
+ emoji_hash
+ 
  binding.pry
  end
 
