@@ -7,7 +7,7 @@ def load_library(path)
  emoji_hash
  display_hash = {
    emoji_hash.keys[0] => {
-     :english => emoji_hash.values[0][0]
+     :english => emoji_hash.values[0][0],
      :japanese => emoji_hash.values[0][1]
    }
  }
