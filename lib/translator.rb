@@ -24,7 +24,6 @@ def load_library(path)
    counter += 1
  end
  display_hash
- binding.pry
  end
 
 def get_japanese_emoticon
