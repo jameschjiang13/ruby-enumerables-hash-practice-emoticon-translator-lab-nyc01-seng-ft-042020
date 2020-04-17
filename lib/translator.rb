@@ -23,7 +23,7 @@ def load_library(path)
    display_hash.merge!(a_new_hash_element)
    counter += 1
  end
- display_hash
+ return display_hash
  end
 
 def get_japanese_emoticon
